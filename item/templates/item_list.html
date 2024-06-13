@@ -1,0 +1,18 @@
+<!-- item_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+    <style>
+        /* No need for predefined classes, use inline styles instead */
+    </style>
+</head>
+<body>
+    <h1>Item List</h1>
+    <ul>
+        {% for item in items %}
+            <li style="color: {{ item.status_color }}">{{ item.name }} - {{ item.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
